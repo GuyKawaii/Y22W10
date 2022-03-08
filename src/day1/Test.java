@@ -20,10 +20,10 @@ public class Test {
 		
 		Kid k3 = new Kid("Albert", 1980);
 		kids[3] = k3;
-		
+
 		Kid k4 = new Kid("Frank", 2002);
 		kids[4] = k4;
-		
+
 		// printing kids using toString
 		for (Kid k : kids) {
 			System.out.println(k);
