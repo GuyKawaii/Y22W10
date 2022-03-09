@@ -7,14 +7,14 @@ public class Dice {
 	Random rnd = new Random();
 	
 	Dice() {
-		this.faceValue = 1;
+		faceValue = 1;
 	}
 	
 	int getFaceValue() {
-		return this.faceValue;
+		return faceValue;
 	}
 	
 	void roll() {
-		this.faceValue = rnd.nextInt(6) + 1;
+		faceValue = rnd.nextInt(6) + 1;
 	}
 }

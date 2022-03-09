@@ -13,6 +13,6 @@ public class Classmate {
 	
 	@Override
 	public String toString() {
-		return this.name + " /info/ email: " + this.email + ", phone: " + this.phoneNumber;
+		return name + " /info/ email: " + email + ", phone: " + phoneNumber;
 	}
 }

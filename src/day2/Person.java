@@ -10,19 +10,19 @@ public class Person {
 	}
 	
 	String getName() {
-		return this.name;
+		return name;
 	}
 	
 	int getAge() {
-		return this.age;
+		return age;
 	}
 	
 	void hasBirthday() {
-		this.age += 1;
+		age += 1;
 	}
 	
 	@Override
 	public String toString() {
-		return this.name + " has age " + this.age;
+		return name + " has age " + age;
 	}
 }

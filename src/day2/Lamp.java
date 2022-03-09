@@ -8,15 +8,15 @@ public class Lamp {
 	}
 	
 	Lamp(){
-		this.isOn = false;
+		isOn = false;
 	}
 	
 	boolean getState() {
-		return this.isOn;
+		return isOn;
 	}
 	
 	void pushButton() {
-		this.isOn = !this.isOn;
+		isOn = !isOn;
 	}
 	
 	@Override

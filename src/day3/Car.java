@@ -19,7 +19,7 @@ public class Car {
 	}
 	
 	String getModel() {
-		return this.model;
+		return model;
 	}
 	
 	void setModel(String model) {
@@ -27,7 +27,7 @@ public class Car {
 	}
 	
 	String geHonk() {
-		return this.honk;
+		return honk;
 	}
 	
 	void setHonk(String honk) {
@@ -35,26 +35,26 @@ public class Car {
 	}
 	
 	String getHonk() {
-		return this.honk;
+		return honk;
 	}
 	
 	void sound() {
 		if (driver != null)
-			System.out.println(this.honk);
+			System.out.println(honk);
 		else
 			System.out.println("No driver to honk");
 	}
 	
 	void turnEngineOn() {
 		if (driver != null)
-			this.isEngineOn = true;
+			isEngineOn = true;
 		else
 			System.out.println("No driver to turn on");
 	}
 	
 	void turnEngineOff() {
 		if (driver != null)
-			this.isEngineOn = false;
+			isEngineOn = false;
 		else
 			System.out.println("No driver to turn off");
 	}
@@ -69,7 +69,7 @@ public class Car {
 	
 	void drive() {
 		if (isEngineOn && driver != null)
-			System.out.printf("%s %s drives\n", this.brand, this.model);
+			System.out.printf("%s %s drives\n", brand, model);
 		else
 			System.out.println("Engine is turned off");
 	}
@@ -80,11 +80,11 @@ public class Car {
 		else if (!isEngineOn)
 			System.out.println("Engine is off");
 		else
-			System.out.printf("%s %s has parked\n", this.brand, this.model);
+			System.out.printf("%s %s has parked\n", brand, model);
 	}
 	
 	@Override
 	public String toString() {
-		return this.brand + " " + this.model + " with honk: " + this.honk;
+		return brand + " " + model + " with honk: " + honk;
 	}
 }
