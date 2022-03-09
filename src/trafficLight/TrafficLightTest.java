@@ -13,8 +13,8 @@ public class TrafficLightTest {
 	}
 	
 	public static void main(String[] args) {
-//		TrafficLightTest t = new TrafficLightTest();
-//		t.testing();
-		new TrafficLightTest().testing();
+		TrafficLightTest t = new TrafficLightTest();
+		t.testing();
+//		new TrafficLightTest().testing();
 	}
 }
