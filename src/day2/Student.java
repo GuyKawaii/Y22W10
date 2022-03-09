@@ -2,8 +2,9 @@ package day2;
 
 public class Student {
 	private final String name;
-	private final int[] grades;
+	private int[] grades;
 	private int gradeIndex;
+	private final int[] gradesLegal = {-3, 0, 2, 4, 7, 10, 12};
 	
 	Student(String name) {
 		this.name = name;
@@ -20,14 +21,24 @@ public class Student {
 	}
 	
 	int getLatestGrade() {
+		if (this.gradeIndex == -1) {
+			return 0;
+		}
+		
 		return this.grades[this.gradeIndex];
 	}
 	
 	void addGrade(int grade) {
-		if (this.gradeIndex + 1 < this.grades.length) {
-			this.gradeIndex += 1;
-			this.grades[this.gradeIndex] = grade;
+		for (int gradeLegal:gradesLegal) {
+			
+			if ((gradeLegal == grade) && (this.gradeIndex + 1 < this.grades.length)) {
+				this.gradeIndex += 1;
+				this.grades[this.gradeIndex] = grade;
+				
+				return;
+			}
 		}
+		
 	}
 	
 }
